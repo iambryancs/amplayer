@@ -1,0 +1,18 @@
+<ion-view title="{{playlist[0].name}}">
+	<ion-nav-buttons side="right">
+		<button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+  	<ion-content has-header="true" has-bouncing="true" padding="true">
+  		<div class="list card">
+		<!-- div class="item item-divider">
+			{{playlist[0].name}}
+		</div -->
+
+		<a class="item item-icon-right" ng-repeat="track in songs" ng-click="player.queue.add(songs, track.title)">		    
+		    {{track.title}}
+	  	</a>			  		  	
+		</div>
+		
+  	</ion-content>
+  
+</ion-view>
